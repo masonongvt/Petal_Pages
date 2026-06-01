@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Petal Pages</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+	<style>
+
+	.text{
+		font-size:20px;
+	}
+
+	html, body {
+  		height: 100%;
+  		margin: 0;
+		padding: 0;
+		background-color:rgba(249, 246, 226, 1.0);
+		max-width: 1200px;
+		max-height:800px;
+		overflow:auto;
+	}
+
+	header {
+		display:flex;
+		font-family:cursive;
+		font-size:20px;
+		justify-content:space-between;
+		align-items:center;
+	}
+	
+	footer {
+		display:flex;
+		font-family:cursive;
+		font-size:20px;
+		justify-content:space-between;
+		padding:0 20px;
+	}
+
+	button {
+		font-family:cursive;
+		background:transparent;
+		border:1px solid rgba(0,0,0,1);
+		font-size:14px;
+	}
+
+	.search-bar {
+		display:inline-flex;
+		border: 1px solid;
+		border-radius: 50px;
+		max-width:600px;
+		padding:10px 20px;
+
+	}
+
+	.search-button {
+		display:inline-flex;
+		background: transparent;
+		border: none;
+		align-items:center;
+
+	}
+
+	.dropdown {
+  		position: relative;
+  		display: inline-block;file:///Users/masonong/Desktop/Welcome%20Page/images/petal_pages_logo.avif
+		font-size:30px;
+	}
+
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		font-size:16px;
+		background-color: #f1f1f1;
+		min-width: 20px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+	}
+
+	.dropdown-content a {
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+	}
+
+	.dropdown:hover .dropdown-content {display: block;}
+
+	.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+	.icon-with-number{file:///Users/masonong/Desktop/Welcome%20Page/images/petal_pages_logo.avif
+		display: flex;
+		position: relative;
+		font-size:30px;
+	}
+	
+	.icon-text{
+		position: absolute;
+		font-size:15px;
+		font-weight:bold;
+		bottom:20px;
+		right:11.5px;
+		color:rgba(255,255,255,1);
+	}
+
+	a:link, a:visited {
+		text-decoration:none;
+		color:rgba(0,0,0,1);	
+	}
+
+	table {
+		font-family:cursive;
+		font-size:14px;
+		border-spacing: 120px 0px;
+	}
+
+	nav ul{
+		display: flex;
+		margin:0;
+		list-style:none;
+		justify-content: space-around;
+		font-family:cursive;
+		font-weight:bold;
+		font-size:16px;
+		background-color: rgba(76, 118, 81, 0.75);
+	}
+
+	.nav-link.inactive {
+		padding:8px 16px;
+		color:rgba(249, 246, 226, 1.0);		
+	}
+	
+	.xl-spacing td{
+		padding-top:20px;
+	}
+
+	.nav-link.active {
+		background-color:rgba(249, 246, 226, 1.0);
+		padding:8px 16px;
+		border-radius: 50px;
+		
+	}
+
+	.book-button {
+		align-items: center;
+		justify-content:center;
+		display: inline-flex;
+		position: relative;
+	}
+
+	.book-button-img {
+		position: absolute;
+		left:0%;
+	}	
+
+	.book-button-text {
+		position: absolute;
+		right:-800%;
+		font-weight: bold;
+		font-size:14px;
+		padding: 10px;
+		background-color:rgba(255,255,255,0.7);
+		font-size:10px;
+	}
+	</style>
+</head>
+<body>
+<header>
+
+<img src="images/petal_pages_logo.avif" style=width:150px;height:150px;>
+
+
+<h1 style="font-size:45px;">Petal Pages</h1>
+<form action="">
+	<input class="search-bar" type="search" id="book_search" name="book_search" placeholder="Search">
+	<button class="search-button" type="submit">
+		 <i class="fa-solid fa-search"></i>
+	</button>
+</form>
+
+<div class="icon-with-number">
+	<i class="fa-solid fa-cart-shopping"></i>
+	<span class="icon-text">1</span>
+</div>
+
+<div style="padding-right:15px;" class="dropdown">  
+ 	<i class="fa-solid fa-circle-user"></i>
+	<span class="text">Mason O</span>
+ 	<div class="dropdown-content">
+		<a href="#">Log Out</a>
+	</div>
+</div>
+</header>
+
+<nav class>
+	<ul>
+		<a href "#mystery" class="nav-link inactive">Biography</a>
+		<a href "#mystery" class="nav-link inactive">Horror</a>
+		<a href "#mystery" class="nav-link active">Mystery</a>
+		<a href "#mystery" class="nav-link inactive">Romance</a>
+		<a href "#mystery" class="nav-link inactive">Sci-Fi</a>
+	</ul>
+</nav>
+
+<table>
+	<tr class="xl-spacing">
+		<td>
+			<button class="book-button">
+				<img class="book-button-img" src="images/nightshade.jpg" style=width:150px;height=200px;>
+				<span class="book-button-text">Read Now</span>
+			</button>
+		</td>
+		<td><img src="images/the_frozen_river.jpg" style=width:150px;height=200px;></td>
+		<td><img src="images/the_inheritance_games.jpg" style=width:150px;height=200px;></td>
+		<td><img src="images/the_secret_history.jpg" style=width:150px;height=200px;></td>	
+	</tr>
+	<tr>
+		<td><b>Nightshade</b></td>
+		<td><b>The Frozen River</b></td>
+		<td><b>The Inheritance Games</b></td>
+		<td><b>The Secret History</b></td>	
+	</tr>
+	<tr>
+		<td>Michael Connelly</td>
+		<td>Ariel Lawhon</td>
+		<td>Jennifer Lynn Barnes</td>
+		<td>Donna Tartt</td>	
+	</tr>
+	<tr>
+		<td>Free</td>
+		<td>$14.99</td>
+		<td>$9.99</td>
+		<td>$19.99</td>	
+	</tr>
+	<tr>
+		<td></td>
+		<td><button>Add to Cart</button></td>
+		<td><button>Add to Cart</button></td>
+		<td><button>Add to Cart</button></td>	
+	</tr>
+
+
+	<tr class="xl-spacing">
+		<td><img src="images/his&hers.jpg" style=width:150px;height=200px;></td>
+		<td><img src="images/killer_instinct.jpg" style=width:150px;height=200px;></td>
+		<td>
+			<button class="book-button">
+				<img class="book-button-img" src="images/pretty_girls.jpg" style=width:150px;height=200px;>
+				<span class="book-button-text">Read Now</span>
+			</button>
+		</td>
+		<td><img src="images/three_bags_full.jpg" style=width:150px;height=200px;></td>	
+	</tr>
+	<tr>
+		<td><b>His & Hers</b></td>
+		<td><b>Killer Instinct</b></td>
+		<td><b>Pretty Girls</b></td>
+		<td><b>Three Bags Full</b></td>	
+	</tr>
+	<tr>
+		<td>Alice Feeney</td>
+		<td>Jennifer Lynn Barnes</td>
+		<td>Karin Slaughter</td>
+		<td>Leonie Swann</td>	
+	</tr>
+	<tr>
+		<td>$10.50</td>
+		<td>$12.99</td>
+		<td>Free</td>
+		<td>$8.99</td>	
+	</tr>
+	<tr>
+		<td><button>Add to Cart</button></td>
+		<td><button>Add to Cart</button></td>
+		<td></td>
+		<td><button>Add to Cart</button></td>
+	</tr>
+</table>
+
+<footer>
+<p>&copy 2026 Petal Pages</p>
+<p>|</p>
+<p><a href=""</a>Contact</p> 
+<p>|</p> 
+<p><a href=""</a>Directions</p> 
+<p>|</p> 
+
+<p><a href="https://facebook.com"
+	<i class="fa-brands fa-facebook"></i></button></a></p>
+<p><a href="https://instagram.com"
+	<i class="fa-brands fa-instagram"></i></a></p>
+<p><a href="https://reddit.com"
+	<i class="fa-brands fa-reddit"></i></button></a></p>
+<p><a href="https://tiktok.com"
+	<i class="fa-brands fa-tiktok"></i></button></a></p>
+</footer>
+</body>
+</html>
