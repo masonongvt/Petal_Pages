@@ -1,0 +1,388 @@
+	html, body {
+		width: 100%;
+  		height: 100%;
+  		margin: 0;
+		padding: 0;
+		background-color: rgba(249, 246, 226, 1.0);
+		max-width: 1200px;
+		max-height: 800px;
+		font-size: 1rem;
+		overflow: auto;
+	}
+
+
+	header {
+		display: flex;
+		font-family: cursive;
+		font-size: clamp(0.5rem, 2vw, 1.5rem);
+		justify-content: space-between;
+		align-items: center;
+		padding-left: 10px;
+		padding-right: 20px;
+	}
+	
+	footer {
+		display: flex;
+		font-family: cursive;
+		font-size: clamp(0.25rem, 2vw, 1.25rem);
+		justify-content: space-between;
+		padding: 0 20px;
+	}
+
+	h1, h2 {
+		font-family: cursive;
+		margin: 0;
+	}
+
+	.logo-img {
+		width: 12vw;
+		height: 12vw;
+ 		-webkit-mask-image: url(images/pplogo.png);
+ 		mask-image: url(images/pplogo.png);
+		mask-repeat: no-repeat;
+		mask-size: contain;
+	}
+
+	.search-bar {
+		display: inline-flex;
+	}
+
+	.search-button {
+		display: inline-flex;
+		background: transparent;
+		border: none;
+		align-items: center;
+		font-size: clamp(0.25rem, 2vw, 1.25rem);
+	}
+
+	.dropdown {
+  		position: relative;
+  		display: inline-block;
+		background-color: transparent;
+		font-family: cursive;
+		border: none;
+		font-size: clamp(0.25rem, 2vw, 1.25rem);
+	}
+
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #f1f1f1;
+		min-width: 20px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+	}
+
+	.dropdown-content a {
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+	}
+
+	.dropdown:hover .dropdown-content {display: block;}
+
+	.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+	.dropdown-content a:hover {
+		background-color: rgba(76, 118, 81, 1);
+		color: rgba(255,255,255,1);
+	}
+
+	.icon-with-number{
+		display: flex;
+		position: relative;
+	}
+	
+	.icon-text{
+		position: absolute;
+		font-weight: bold;
+		bottom: 0vw;
+		right: 0.5vw;
+		color: rgba(255,255,255,1);
+	}
+
+	a:link, a:visited {
+		text-decoration: none;
+		color: rgba(0,0,0,1);	
+	}
+
+	.hero-image {
+		background-image: url("images/hero_image.jpg");
+		height: 50%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+	}
+
+	#hero-featured-books {
+		height: 20%;
+		position: relative;
+		background-position: center;
+		background-repeat: repeat;
+		background-size: contain;
+	}
+
+	#featured-book-link {
+		position:absolute;
+		width:100%;
+		height:100%;
+	}
+
+	#featured-book-title {
+		position: absolute;
+		font-size: clamp(1rem, 2vw, 2rem);
+		font-weight: bold;
+		font-family: cursive;
+		color: black;		
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-color: rgba(249, 246, 226, 1.0);
+		border-radius: 10px;
+		margin:0;
+		padding: 6px;
+		border: 2px, solid;
+	}
+
+	.hero-text {
+		position: absolute;
+		font-size: clamp(0.25rem, 2vw, 1.25rem);
+		text-align: center;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: black;
+		padding: 15px; 
+		background-color: rgba(221,221,221,0.75);
+		border-radius: 10px;
+	}
+
+	.hero-text button {
+		border: none;
+		font-size: clamp(0.25rem, 2vw, 1.25rem);
+		outline: 0;
+		width: 75%;
+		padding: 10px 15px;
+		color: white;
+		background-color: rgba(76, 118, 81, 1);
+		cursor: pointer;
+		border-radius: 10px;
+		transition: width 2s;
+	}
+
+        .hero-text button:hover {
+		width: 100%;
+        }
+
+	table {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		border-spacing: 6vw 0vw;
+		font-size: clamp(0.25rem, 2vw, 1.25rem);
+		font-family: cursive;
+	}
+
+	nav ul {
+		display: flex;
+		font-size: clamp(0.5rem, 2vw, 1.5rem);
+		align-items: center;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		justify-content: space-around;
+		font-family: cursive;
+		font-weight: bold;
+		background-color: rgba(76, 118, 81, 0.75);
+	}
+
+	.nav-link.inactive {
+		padding: 8px 16px;
+		color: rgba(249, 246, 226, 1.0);		
+	}
+	
+	.xl-spacing td {
+		padding-top: 20px;
+	}
+
+	.nav-link.active {
+		background-color: rgba(249, 246, 226, 1.0);
+		padding: 8px 16px;
+		border-radius: 50px;
+	}
+
+	.book-button {
+        	align-items: center;
+                justify-content: center;
+                display: inline-flex;
+                position: relative;
+                border: none;
+         }
+
+        .book-button-img {
+                position: absolute;
+                left: 0%;
+                border-radius: 10px;
+        }        
+
+        .book-button-text {
+		position: absolute;
+                right: -10vw;
+		font-weight: bold;
+		font-family: cursive;
+                font-size: clamp(0.25rem, 2vw, 1rem);
+                padding: 0.5vw;
+                background-color: rgba(255,255,255,0.7);
+                border-radius: 10px;
+        }
+
+	.logo-mask {
+		-webkit-mask-image: url(trees.jpg);
+		mask-image: url(petal_pages_logo.avif);
+		mask-repeat: no-repeat;
+	}
+
+	#account-creation-page {
+		font-size: clamp(0.25rem, 2vw, 1.25rem);
+		display: flex;
+		width: 100%;
+		min-height: 20vh;
+		overflow: auto;
+		align-items: center;
+	
+	}
+
+	#info-entry {
+		width: 25%;
+		height: 100%;
+		margin-left: 2vw;
+	}
+
+	input {
+		border-radius: 50px;
+		width: 75%;
+		border: 1px solid;
+		font-size: clamp(0.25rem, 2vw, 1.25rem);
+		padding: 2.5% 5%;
+	}
+
+	input[type="submit"] {
+		transition: accountCreateFill;
+		width: 95.75vw;
+		background-color: black;
+		font-family: cursive;
+		font-size: clamp(1rem, 2vw, 3rem);
+		color: white;
+	}
+
+	#account-inputs {
+		font-family: cursive;
+		line-height: 2;
+	}
+
+	input[type="text"]:focus,
+	textarea:focus,
+	select:focus {
+    		background: rgba(76,118,81,0.2);
+		outline: 1.5px solid rgba(76,118,81,0.7);
+	}
+
+	#info-entry-picture {
+		width: 75%;
+		margin: 2vw;
+	}
+
+	#info-entry-picture img {
+		width: 100%;
+		height: 100%;
+		border-radius: 10px;
+	}
+
+	.error-message {
+		color: red;
+		font-family: cursive;
+		font-size: clamp(0.25rem, 2vw, 0.875rem);
+		padding: 0.25rem;
+		display: block;
+	}
+
+	input.invalid {
+  		border: 2px solid red;
+	}
+
+	.form-group {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#add-to-cart {
+		font-family: cursive;
+		background: transparent;
+		border: 1px solid rgba(0,0,0,1);
+		font-size: clamp(0.25rem, 2vw, 1.25rem);
+		border-radius: 10px;
+	}
+
+	#book-cover {
+		width: 15vw;
+		height: 20vw;
+		border-radius: 10px;
+		font-size: clamp(0.25rem, 2vw, 1.25rem);
+	}
+
+	#new-user {
+		display: flex;
+		margin: 0;
+		align-items: center;
+		min-height: 100vh;
+		justify-content: center;
+		font-size: clamp(1rem, 4vw, 2rem);
+	}
+
+	#add-to-cart:hover {
+  		animation: addToCartFill 0.25s linear forwards;
+	}
+
+	.book-button-text:hover {
+  		animation: readNowFill 0.25s linear forwards;
+	}
+	
+	input[type="submit"]:hover {
+		animation: accountCreateFill 0.25s linear forwards;
+	}
+	
+	@keyframes addToCartFill {
+		0% {
+			background-color: rgba(0,0,0,0);
+			color: rgba(0,0,0,1);	
+		}
+
+		100% {
+			background-color: rgba(76,118,81,0.7);
+			color: rgba(255,255,255,1);
+		}
+	}
+
+	@keyframes readNowFill {
+		0% {
+			background-color: rgba(255,255,255,0.7);
+			color: rgba(0,0,0,1);	
+		}
+
+		100% {
+			background-color: rgba(76,118,81,0.7);
+			color: rgba(255,255,255,1);
+		}
+	}
+
+	@keyframes accountCreateFill {
+		0% {
+			background-color: rgba(0,0,0,1);
+		}
+
+		100% {
+			background-color: rgba(76,118,81,0.7);
+		}
+	}

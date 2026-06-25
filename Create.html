@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+	<link rel="stylesheet" href="bookstore_style.css">
+</head>
+<body>
+<header>
+	<img class="logo-img" src="images/leaf.jpg">
+
+	<h1>Petal Pages</h1>
+	<form action="">
+		<input class="search-bar" type="search" id="book_search" name="book_search" placeholder="Search">
+		<button class="search-button" type="submit">
+		 	<i class="fa-solid fa-search"></i>
+		</button>
+	</form>
+
+	<div class="dropdown">
+		<i class="fa-solid fa-book"></i>
+		<span class="text">Categories</span>
+		<div class="dropdown-content">
+			<a href="categories.html">Biography</a>
+			<a href="categories.html">Horror</a>
+			<a href="categories.html">Mystery</a>
+			<a href="categories.html">Romance</a>
+			<a href="categories.html">Sci-Fi</a>
+ 		</div>
+	</div>
+
+	<div class="icon-with-number">
+		<i class="fa-solid fa-cart-shopping"></i>
+		<span class="icon-text">1</span>
+	</div>
+
+	<button class="dropdown">  
+ 		<i class="fa-solid fa-circle-user"></i>
+		<span class="text">Log in</span>
+		</div>
+	</div>
+</header>
+	<div id="account-creation-page">
+		<div id="info-entry">
+		<h2>Account Info</h2>
+			<form id="account-inputs" action="create_account.php" method="POST" novalidate>
+				<div class="form-group">
+					First name: 
+					<input type="text" name="firstname" id="firstname" placeholder="John">
+					<span class="error-message" id="firstnameError" aria-live="polite"></span>
+				</div>
+				<div class="form-group">
+					Last name: 
+					<input type="text" name="lastname" placeholder="Doe">
+					<span class="error-message" id="lastnameError" aria-live="polite"></span>
+				</div>
+				<div class="form-group">
+					Phone:
+					<input type="text" name="phone" placeholder="111-111-1111">
+					<span class="error-message" id="phoneError" aria-live="polite"></span>
+				</div>
+				<div class="form-group">
+					Email:
+					<input type="text" name="email" placeholder="johndoe@gmail.com">
+					<span class="error-message" id="emailError" aria-live="polite"></span>
+				</div>
+				<div class="form-group">
+					Birthday:
+					<input type="text" name="birthday" placeholder="10/10/1999">
+					<span class="error-message" id="birthdayError" aria-live="polite"></span>
+				</div>
+				<div class="form-group">
+					Street Address:
+					<input type="text" name="street" placeholder="12345 Main St">
+					<span class="error-message" id="streetError" aria-live="polite"></span>
+				</div>
+				<div class="form-group">
+					City:
+					<input type="text" name="city" placeholder="Anytown">
+					<span class="error-message" id="cityError" aria-live="polite"></span>
+				</div>	
+				<div class="form-group">
+					State:
+					<input type="text" name="state" placeholder="VA">
+					<span class="error-message" id="stateError" aria-live="polite"></span>
+				</div>
+				<div class="form-group">
+					ZIP:         
+					<input type="text" name="zip" placeholder="12345">
+					<span class="error-message" id="zipError" aria-live="polite"></span>
+				</div>
+				<div class="form-group">
+					Password:
+					<input type="text" name="password">
+					<span class="error-message" id="passwordError" aria-live="polite"></span>
+				</div>
+				<div class="form-group">
+					Confirm Password:
+					<input type="text" name="confirmpassword">
+					<span class="error-message" id="confirmPasswordError" aria-live="polite"></span>
+				</div>
+				<br>
+				<input type="submit" value="Create Account">
+			</form>
+		</div>
+		<div id="info-entry-picture">
+			<ul id="error-message"></ul>
+			<img src="images/account_leaves.jpg">
+		</div>
+	</div>
+<footer>
+	<p>&copy 2026 Petal Pages</p>
+	<p>|</p>
+	<p><a href=""</a>Contact</p> 
+	<p>|</p> 
+	<p><a href=""</a>Directions</p> 
+	<p>|</p> 
+
+	<p><a href="https://facebook.com"
+		<i class="fa-brands fa-facebook"></i></button></a></p>
+	<p><a href="https://instagram.com"
+		<i class="fa-brands fa-instagram"></i></a></p>
+	<p><a href="https://reddit.com"
+		<i class="fa-brands fa-reddit"></i></button></a></p>
+	<p><a href="https://tiktok.com"
+		<i class="fa-brands fa-tiktok"></i></button></a></p>
+</footer>
+<script src="bookstore.js"></script>
+</body>
+</html>

@@ -4,202 +4,81 @@
 	<title>Petal Pages</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-	<style>
-
-	.text{
-		font-size:20px;
-	}
-
-	html, body {
-  		height: 100%;
-		margin:0;
-		padding:0;
-		background-color:rgba(249, 246, 226, 1.0);
-		max-width: 1200px;
-		max-height:800px;
-	}
-	
-	header {
-		display:flex;
-		font-family:cursive;
-		font-size:20px;
-		justify-content:space-between;
-		align-items:center;
-	}
-	
-	footer {
-		display:flex;
-		font-family:cursive;
-		font-size:20px;
-		justify-content:space-between;
-		padding:0 20px;
-	}
-
-	.button {
-		font-family:cursive;
-		background:transparent;
-		border:none;
-		font-size:20px;
-	}
-	
-	.search-bar {
-		display:inline-flex;
-		border: 1px solid;
-		border-radius: 50px;
-		max-width:600px;
-		padding:10px 20px;
-
-	}
-
-	.search-button {
-		display:inline-flex;
-		background: transparent;
-		border: none;
-		align-items:center;
-
-	}
-
-	.dropdown {
-  		position: relative;
-  		display: inline-block;
-		font-size:30px;
-	}
-
-	.dropdown-content {
-		display: none;
-		position: absolute;
-		font-size:16px;
-		background-color: #f1f1f1;
-		min-width: 20px;
-		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-		z-index: 1;
-	}
-
-	.dropdown-content a {
-		color: black;
-		padding: 12px 16px;
-		text-decoration: none;
-		display: block;
-	}
-
-	.dropdown:hover .dropdown-content {display: block;}
-
-	.dropdown:hover .dropbtn {background-color: #3e8e41;}
-
-	.icon-with-number{
-		display: flex;
-		position: relative;
-		font-size:30px;
-	}
-	
-	.icon-text{
-		position: absolute;
-		font-size:15px;
-		font-weight:bold;
-		bottom:11px;
-		right:11.5px;
-		color:rgba(255,255,255,1);
-	}
-
-	.hero-image {
-		background-image: url("images/hero_image.jpg");
-		height: 70%;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		position: relative;
-	}
-
-	.hero-text {
-		position:absolute;
-		text-align:center;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		color: black;
-	}
-
-	.hero-text button {
-		border: none;
-		outline: 0;
-		padding: 10px 25px;
-		color: white;
-		background-color: rgba(76, 118, 81, 1);
-		cursor: pointer;
-	}
-
-	a:link, a:visited {
-		text-decoration:none;
-		color:rgba(0,0,0,1);	
-	}
-
-	</style>
+	<link rel="stylesheet" href="bookstore_style.css">
 </head>
 <body>
 <header>
-<img src="images/petal_pages_logo.avif" style=width:150px;height:150px;>
+	<img class="logo-img" src="images/leaf.jpg">
 
-<h1 style="font-size:45px;">Petal Pages</h1>
-<form action="">
-	<input class="search-bar" type="search" id="book_search" name="book_search" placeholder="Search">
-	<button class="search-button" type="submit">
-		 <i class="fa-solid fa-search"></i>
-	</button>
-</form>
+	<h1>Petal Pages</h1>
+	<form action="">
+		<input class="search-bar" type="search" id="book_search" name="book_search" placeholder="Search">
+		<button class="search-button" type="submit">
+		 	<i class="fa-solid fa-search"></i>
+		</button>
+	</form>
 
-<div class="dropdown">
-	<i class="fa-solid fa-book"></i>
-	<span class="text">Categories</span>
-	<div class="dropdown-content">
-		<a href="categories.html">Biography</a>
-		<a href="categories.html">Horror</a>
-		<a href="categories.html">Mystery</a>
-		<a href="categories.html">Romance</a>
-		<a href="categories.html">Sci-Fi</a>
- 	</div>
-</div>
-
-<div class="icon-with-number">
-	<i class="fa-solid fa-cart-shopping"></i>
-	<span class="icon-text">1</span>
-</div>
-
-<div style="padding-right:15px;" class="dropdown">  
- 	<i class="fa-solid fa-circle-user"></i>
-	<span class="text">Mason O</span>
- 	<div class="dropdown-content">
-		<a href="#">Log Out</a>
+	<div class="dropdown">
+		<i class="fa-solid fa-book"></i>
+		<span class="text">Categories</span>
+		<div class="dropdown-content">
+			<a href="categories.html">Biography</a>
+			<a href="categories.html">Horror</a>
+			<a href="categories.html">Mystery</a>
+			<a href="categories.html">Romance</a>
+			<a href="categories.html">Sci-Fi</a>
+ 		</div>
 	</div>
-</div>
+
+	<div class="icon-with-number">
+		<i class="fa-solid fa-cart-shopping"></i>
+		<span class="icon-text">1</span>
+	</div>
+
+	<div class="dropdown">  
+ 		<i class="fa-solid fa-circle-user"></i>
+		<span class="text">Mason O</span>
+ 		<div class="dropdown-content">
+			<a href="create.html">Log Out</a>
+		</div>
+	</div>
 </header>
 
 <div class="hero-image">
 	<div class="hero-text">
-		<p style="padding:20px; background-color:rgba(221,221,221,0.75);"><em>Welcome to Petal Pages!<br><br>Your one-stop shop for intellectual growth.</em></p>
+		<p><em>Welcome to Petal Pages!<br><br>Your one-stop shop for intellectual growth.</em></p>
 		<a href="categories.html">
 			<button>Shop our titles now</button>
 		</a>
 	</div>
 </div>
 
+<div id="hero-featured-books">
+	<a id="featured-book-link" href="#">
+		<img id="featured-book-image" src="">
+		<p id="featured-book-title">Placeholder</p>
+	</a>
+</div>
 <footer>
-<p>&copy 2026 Petal Pages</p>
-<p>|</p>
-<p><a href=""</a>Contact</p> 
-<p>|</p> 
-<p><a href=""</a>Directions</p> 
-<p>|</p> 
+	<p>&copy 2026 Petal Pages</p>
+	<p>|</p>
+	<p><a href=""</a>Contact</p> 
+	<p>|</p> 
+	<p><a href=""</a>Directions</p> 
+	<p>|</p> 
 
-<p><a href="https://facebook.com"
-	<i class="fa-brands fa-facebook"></i></button></a></p>
-<p><a href="https://instagram.com"
-	<i class="fa-brands fa-instagram"></i></a></p>
-<p><a href="https://reddit.com"
-	<i class="fa-brands fa-reddit"></i></button></a></p>
-<p><a href="https://tiktok.com"
-	<i class="fa-brands fa-tiktok"></i></button></a></p>
+	<p><a href="https://facebook.com"
+		<i class="fa-brands fa-facebook"></i></button></a></p>
+	<p><a href="https://instagram.com"
+		<i class="fa-brands fa-instagram"></i></a></p>
+	<p><a href="https://reddit.com"
+		<i class="fa-brands fa-reddit"></i></button></a></p>
+	<p><a href="https://tiktok.com"
+		<i class="fa-brands fa-tiktok"></i></button></a></p>
 </footer>
+<script src="bookstore.js"></script>
 </body>
 </html>
