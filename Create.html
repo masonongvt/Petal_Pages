@@ -47,7 +47,7 @@
 	<div id="account-creation-page">
 		<div id="info-entry">
 		<h2>Account Info</h2>
-			<form id="account-inputs" action="create_account.php" method="POST" novalidate>
+			<form id="account-inputs" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST" novalidate>
 				<div class="form-group">
 					First name: 
 					<input type="text" name="firstname" id="firstname" placeholder="John">
